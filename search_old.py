@@ -28,9 +28,9 @@ while True:
         end_time = time.time()  # زمان پایان اجرا
         execution_time = end_time - start_time  # زمان اجرا
         print(f"Search time: {execution_time:.2f} seconds")
-    directory = 'D:/search/file'
+    directory ='data\dickens'
     file_list = get_file_list(directory)
     WORD = input("Enter the word to search: ")
     # os.system('cls')    
-    # word = WORD.lower()
+    word = WORD.lower()
     Search_words(word, directory,file_list , )
